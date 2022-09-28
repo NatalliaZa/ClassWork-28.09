@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <td>Name:</td>
+        <td>{{user.name}}</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>{{user.email}}</td>
+    </tr>
+</table>
+
+<button (click)="getPosts()">Посты юзера</button>
+<div class="user-post-container">
+<app-user-post [post]="post" *ngFor="let post of posts"></app-user-post>
+</div>
